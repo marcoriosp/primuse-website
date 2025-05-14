@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 108 37 154; /* Purple color */
+    --background: 18 18 18; /* Dark background */
+  }
+  
+  body {
+    @apply bg-[rgb(var(--background))] text-white;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center rounded px-4 py-2 text-sm font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply btn bg-[rgb(var(--primary))] text-white hover:bg-opacity-90;
+  }
+  
+  .btn-ticket {
+    @apply btn bg-[rgb(var(--primary))] text-white py-2 px-6 rounded;
+  }
+}
