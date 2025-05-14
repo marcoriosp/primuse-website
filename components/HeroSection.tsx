@@ -108,7 +108,7 @@ export default function HeroSection() {
   /*const currentSlideData = slides[currentSlide];*/
 
   return (
-    <section className="relative h-[80vh] min-h-[500px] flex items-end">
+    <section className="relative h-screen flex items-end">
       {/* Hero background images */}
       {slides.map((slide, index) => (
         <div 
