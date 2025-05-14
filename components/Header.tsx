@@ -16,16 +16,13 @@ export default function Header() {
           <Link href="/all-shows" className="text-white font-medium text-lg">
             All Shows
           </Link>
-          <Link href="/artist" className="text-white font-medium text-lg">
+          <Link href="https://app.primuse.net/" className="text-white font-medium text-lg" target="_blank">
             Artist
           </Link>
-          <Link href="/blog" className="text-white font-medium text-lg">
-            Blog
-          </Link>
-          <Link href="/about-us" className="text-white font-medium text-lg">
+          <Link href="https://www.primusegroup.com/about-us/" className="text-white font-medium text-lg" target="_blank">
             About Us
           </Link>
-          <Link href="/contact-us" className="text-white font-medium text-lg">
+          <Link href="https://www.primusegroup.com/contact-us/" className="text-white font-medium text-lg" target="_blank">
             Contact Us
           </Link>
         </nav>
