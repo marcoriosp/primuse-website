@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+/*import Link from "next/link";*/
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
@@ -105,7 +105,7 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, [nextSlide]);
 
-  const currentSlideData = slides[currentSlide];
+  /*const currentSlideData = slides[currentSlide];*/
 
   return (
     <section className="relative h-[80vh] min-h-[500px] flex items-end">
