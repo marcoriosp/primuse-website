@@ -3,35 +3,29 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-[rgb(var(--primary))] py-4">
+    <header className="bg-[rgb(var(--primary))] py-5">
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <Image
-            src="/images/primuse-logo.png" 
-            alt="Primuse Logo"
-            width={120}
-            height={30}
-            className="h-8 w-auto"
-          />
+          <Image src="/images/logo.svg" alt="PRIMUSE" width={120} height={30} className="h-10 w-auto" />
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
           <Link href="/" className="text-white font-medium">
             Home
           </Link>
-          <Link href="/all-shows" className="text-white font-medium">
+          <Link href="/all-shows" className="text-white font-medium text-lg">
             All Shows
           </Link>
-          <Link href="/artist" className="text-white font-medium">
+          <Link href="/artist" className="text-white font-medium text-lg">
             Artist
           </Link>
-          <Link href="/blog" className="text-white font-medium">
+          <Link href="/blog" className="text-white font-medium text-lg">
             Blog
           </Link>
-          <Link href="/about-us" className="text-white font-medium">
+          <Link href="/about-us" className="text-white font-medium text-lg">
             About Us
           </Link>
-          <Link href="/contact-us" className="text-white font-medium">
+          <Link href="/contact-us" className="text-white font-medium text-lg">
             Contact Us
           </Link>
         </nav>

@@ -5,46 +5,46 @@ export default function LineupSection() {
     {
       id: 1,
       title: "NOMADS in Love",
-      date: "25",
+      day: "25",
       month: "APR",
-      day: "24",
+      year: "2024",
       venue: "The Room Bar",
       location: "Indonesia",
-      image: "/images/nomads-in-love.jpg",
       link: "/tickets/nomads-in-love",
+      image: "/images/shows/saweetie-brisbane.jpg",
     },
     {
       id: 2,
       title: "NOMADS in Love",
-      date: "25",
+      day: "25",
       month: "APR",
-      day: "24",
+      year: "2024",
       venue: "The Room Bar",
       location: "Indonesia",
-      image: "/images/nomads-in-love.jpg",
       link: "/tickets/nomads-in-love",
+      image: "/images/shows/saweetie-melbourne.jpg",
     },
     {
       id: 3,
       title: "NOMADS in Love",
-      date: "25",
+      day: "25",
       month: "APR",
-      day: "24",
+      year: "2024",
       venue: "The Room Bar",
       location: "Indonesia",
-      image: "/images/nomads-in-love.jpg",
       link: "/tickets/nomads-in-love",
+      image: "/images/shows/saweetie-sydney.jpg",
     },
     {
       id: 4,
       title: "NOMADS in Love",
-      date: "25",
+      day: "25",
       month: "APR",
-      day: "24",
+      year: "2024",
       venue: "The Room Bar",
       location: "Indonesia",
-      image: "/images/nomads-in-love.jpg",
       link: "/tickets/nomads-in-love",
+      image: "/images/shows/saweetie-perth.jpg",
     },
   ];
 
@@ -60,14 +60,16 @@ export default function LineupSection() {
           {events.map((event) => (
             <EventCard
               key={event.id}
+              length={events.length}
+              id={event.id}
               title={event.title}
-              date={event.date}
-              month={event.month}
               day={event.day}
+              month={event.month}
+              year={event.year}
               venue={event.venue}
               location={event.location}
-              image={event.image}
               link={event.link}
+              image={event.image}
             />
           ))}
         </div>
