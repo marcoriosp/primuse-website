@@ -18,6 +18,7 @@ type Event = {
 
 export default function LineupSection() {
   const [regionEvents, setRegionEvents] = useState<Event[]>([]);
+  const [region, setRegion] = useState<string>("");
 
   useEffect(() => {
     // Get current hostname
@@ -28,18 +29,25 @@ export default function LineupSection() {
     // Set default region based on hostname
     if (hostname.includes("com.au")) {
       filteredEvents = events.filter(event => event.country_iso === "AU");
+      setRegion("IN AUSTRALIA");
     } else if (hostname.includes("com.nz")) {
       filteredEvents = events.filter(event => event.country_iso === "NZ");
+      setRegion("IN NEW ZEALAND");
     } else if (hostname.includes("cn")) {
       filteredEvents = events.filter(event => event.country_iso === "CN");
+      setRegion("IN CHINA");
     } else if (hostname.includes("id")) {
       filteredEvents = events.filter(event => event.country_iso === "ID");
+      setRegion("IN INDONESIA");
     } else if (hostname.includes("my")) {
       filteredEvents = events.filter(event => event.country_iso === "MY");
+      setRegion("IN MALAYSIA");
     } else if (hostname.includes("sg")) {
       filteredEvents = events.filter(event => event.country_iso === "SG");
+      setRegion("IN SINGAPORE");
     } else {
       filteredEvents = events; // Show all events if no specific domain match
+      setRegion("");
     }
     
     // Sort events by date in ascending order
@@ -53,9 +61,9 @@ export default function LineupSection() {
   return (
     <section className="py-16 bg-[rgb(var(--background))]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-2">THIS YEAR LINEUP</h2>
+        <h2 className="text-3xl font-bold text-center mb-2">UPCOMING SHOWS {region}</h2>
         <p className="text-center text-gray-300 mb-12">
-          This is where you find the parties, concerts, and chaos worth showing up for
+          Explore the concerts that are making noise across {region.charAt(0).toUpperCase() + region.slice(1).toLowerCase()}.
         </p>
         
         <div className="mt-8">
