@@ -58,7 +58,7 @@ export default function EventCard({
       </div>
       
       <div className="flex justify-end items-center">
-        <Link href={link} className="btn-ticket w-full md:w-auto">BUY TICKETS</Link>
+        <Link href={link} className="btn-ticket w-full md:w-auto" target="_blank">BUY TICKETS</Link>
       </div>
 
     </div>
