@@ -116,7 +116,7 @@ export default function Footer() {
               <Link href="/all-shows" className="text-white">All Shows</Link>
               <Link href="https://app.primuse.net/" className="text-white" target="_blank">Artist</Link>
               <Link href="https://www.primusegroup.com/about-us/" className="text-white" target="_blank">About Us</Link>
-              <Link href="https://www.primusegroup.com/contact-us/" className="text-white" target="_blank">Contact Us</Link>
+              <Link href="/contact" className="text-white">Contact Us</Link>
             </div>
           </div>
           

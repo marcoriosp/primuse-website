@@ -14,7 +14,7 @@ export default function Header() {
           <Link href="/all-shows" className="text-white font-medium text-lg">All Shows</Link>
           <Link href="https://app.primuse.net/" className="text-white font-medium text-lg" target="_blank">Artist</Link>
           <Link href="https://www.primusegroup.com/about-us/" className="text-white font-medium text-lg" target="_blank">About Us</Link>
-          <Link href="https://www.primusegroup.com/contact-us/" className="text-white font-medium text-lg" target="_blank">Contact Us</Link>
+          <Link href="/contact" className="text-white font-medium text-lg">Contact Us</Link>
         </nav>
         
         <button className="md:hidden text-white">

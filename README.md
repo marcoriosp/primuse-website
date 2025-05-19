@@ -1,22 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Primuse Website
+
+This is a Next.js project for the Primuse website.
+
+## Contact Form Setup
+
+The contact form sends emails to australia@primuse.net using an SMTP server. To set it up:
+
+1. Create a `.env.local` file in the project root with your SMTP configuration:
+
+```
+SMTP_HOST=your_smtp_host
+SMTP_PORT=your_smtp_port
+SMTP_USER=your_smtp_username
+SMTP_PASSWORD=your_smtp_password
+SMTP_SECURE=true_or_false
+SMTP_FROM=your_from_email
+```
+
+Example configuration for Gmail:
+```
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+SMTP_USER=your_gmail_account@gmail.com
+SMTP_PASSWORD=your_app_password
+SMTP_SECURE=true
+SMTP_FROM=your_gmail_account@gmail.com
+```
+
+Note: For Gmail, you'll need to use an App Password rather than your regular account password. See [Google's documentation](https://support.google.com/accounts/answer/185833) for details.
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
+
+This is a Next.js project that can be deployed on platforms like Vercel, Netlify, or any other hosting service that supports Next.js.
+
+```bash
+npm run build
+npm run start
+```
+
+For production deployment, make sure to set the environment variables for your SMTP configuration in your hosting platform.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
