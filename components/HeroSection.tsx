@@ -3,99 +3,18 @@
 /*import Link from "next/link";*/
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
+import slides from "../src/slides.json";
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
-  const slides = [
-    {
-      image: "/images/banners/saweetie-all.jpg",
-      alt: "Saweetie Australian Tour",
-      title: "Saweetie:",
-      subtitle: "Australian Tour",
-      day: null,
-      date: null,
-      venue: null,
-      ticketLink: null,
-      sponsors: null
-    },
-    {
-      image: "/images/banners/saweetie-brisbane.jpg",
-      alt: "Saweetie Australian Tour",
-      title: "Saweetie:",
-      subtitle: "Brisbane Tour",
-      day: "FRIDAY",
-      date: "15 . 07",
-      venue: "POTATO HEAD",
-      ticketLink: "/tickets/festival",
-      sponsors: [
-        {
-          name: "Sponsor A",
-          image: "/images/sponsors/sponsor1.png"
-        },
-        {
-          name: "Sponsor B",
-          image: "/images/sponsors/sponsor2.png"
-        }
-      ]
-    },
-    {
-      image: "/images/banners/saweetie-melbourne.jpg",
-      alt: "Saweetie Australian Tour",
-      title: "Saweetie:",
-      subtitle: "Australian Tour",
-      day: "SUNDAY",
-      date: "30 . 07",
-      venue: "KU DE TA",
-      ticketLink: "/tickets/beachparty",
-      sponsors: [
-        {
-          name: "Sponsor 1",
-          image: "/images/sponsors/sponsor1.png"
-        }
-      ]
-    },
-    {
-      image: "/images/banners/saweetie-perth.jpg",
-      alt: "Saweetie Australian Tour",
-      title: "Saweetie:",
-      subtitle: "Australian Tour",
-      day: "SUNDAY",
-      date: "30 . 07",
-      venue: "KU DE TA",
-      ticketLink: "/tickets/beachparty",
-      sponsors: [
-        {
-          name: "Sponsor 1",
-          image: "/images/sponsors/sponsor1.png"
-        }
-      ]
-    },
-    {
-      image: "/images/banners/saweetie-sydney.jpg",
-      alt: "Saweetie Australian Tour",
-      title: "Saweetie:",
-      subtitle: "Australian Tour",
-      day: "SUNDAY",
-      date: "30 . 07",
-      venue: "KU DE TA",
-      ticketLink: "/tickets/beachparty",
-      sponsors: [
-        {
-          name: "Sponsor 1",
-          image: "/images/sponsors/sponsor1.png"
-        }
-      ]
-    }
-  ];
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  }, [slides.length]);
+  }, []);
 
   const prevSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  }, [slides.length]);
+  }, []);
 
   // Auto-rotate slides
   useEffect(() => {

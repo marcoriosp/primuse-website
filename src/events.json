@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "title": "Saweetie, Live in Perth",
+      "weekday": "Wednesday",
+      "day": "30",
+      "month": "JUL",
+      "year": "2025",
+      "venue": "Metro City Concert Club",
+      "location": "Australia",
+      "link": "/tickets/nomads-in-love",
+      "image": "/images/shows/saweetie-perth.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Saweetie, Live in Brisbane",
+      "weekday": "Friday",
+      "day": "01",
+      "month": "AUG",
+      "year": "2025",
+      "venue": "Eatons Hill Hotel",
+      "location": "Australia",
+      "link": "/tickets/nomads-in-love",
+      "image": "/images/shows/saweetie-brisbane.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Saweetie, Live in Melbourne",
+      "weekday": "Saturday",
+      "day": "02",
+      "month": "AUG",
+      "year": "2025",
+      "venue": "The Timber Yard",
+      "location": "Australia",
+      "link": "/tickets/nomads-in-love",
+      "image": "/images/shows/saweetie-melbourne.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Saweetie, Live in Sydney",
+      "weekday": "Monday",
+      "day": "04",
+      "month": "AUG",
+      "year": "2025",
+      "venue": "Roundhouse",
+      "location": "Australia",
+      "link": "/tickets/nomads-in-love",
+      "image": "/images/shows/saweetie-sydney.jpg"
+    }
+  ]

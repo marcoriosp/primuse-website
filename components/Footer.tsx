@@ -114,10 +114,9 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
               <Link href="/" className="text-white">Home</Link>
               <Link href="/all-shows" className="text-white">All Shows</Link>
-              <Link href="/artist" className="text-white">Artist</Link>
-              <Link href="/blog" className="text-white">Blog</Link>
-              <Link href="/about" className="text-white">About</Link>
-              <Link href="/contact-us" className="text-white">Contact Us</Link>
+              <Link href="https://app.primuse.net/" className="text-white" target="_blank">Artist</Link>
+              <Link href="https://www.primusegroup.com/about-us/" className="text-white" target="_blank">About Us</Link>
+              <Link href="https://www.primusegroup.com/contact-us/" className="text-white" target="_blank">Contact Us</Link>
             </div>
           </div>
           
@@ -142,7 +141,7 @@ export default function Footer() {
                 }}
               >
                 <option value="com.au">Australia</option>
-                <option value="cn">China</option>
+                {/*<option value="cn">China</option>*/}
                 <option value="id">Indonesia</option>
                 <option value="my">Malaysia</option>
                 <option value="com.nz">New Zealand</option>

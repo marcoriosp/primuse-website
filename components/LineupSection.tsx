@@ -1,53 +1,7 @@
 import EventCard from "./EventCard";
+import events from "../src/events.json";
 
 export default function LineupSection() {
-  const events = [
-    {
-      id: 1,
-      title: "NOMADS in Love",
-      day: "25",
-      month: "APR",
-      year: "2024",
-      venue: "The Room Bar",
-      location: "Indonesia",
-      link: "/tickets/nomads-in-love",
-      image: "/images/shows/saweetie-brisbane.jpg",
-    },
-    {
-      id: 2,
-      title: "NOMADS in Love",
-      day: "25",
-      month: "APR",
-      year: "2024",
-      venue: "The Room Bar",
-      location: "Indonesia",
-      link: "/tickets/nomads-in-love",
-      image: "/images/shows/saweetie-melbourne.jpg",
-    },
-    {
-      id: 3,
-      title: "NOMADS in Love",
-      day: "25",
-      month: "APR",
-      year: "2024",
-      venue: "The Room Bar",
-      location: "Indonesia",
-      link: "/tickets/nomads-in-love",
-      image: "/images/shows/saweetie-sydney.jpg",
-    },
-    {
-      id: 4,
-      title: "NOMADS in Love",
-      day: "25",
-      month: "APR",
-      year: "2024",
-      venue: "The Room Bar",
-      location: "Indonesia",
-      link: "/tickets/nomads-in-love",
-      image: "/images/shows/saweetie-perth.jpg",
-    },
-  ];
-
   return (
     <section className="py-16 bg-[rgb(var(--background))]">
       <div className="container mx-auto px-4">
@@ -63,6 +17,7 @@ export default function LineupSection() {
               length={events.length}
               id={event.id}
               title={event.title}
+              weekday={event.weekday}
               day={event.day}
               month={event.month}
               year={event.year}

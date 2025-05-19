@@ -5,6 +5,7 @@ interface EventCardProps {
   id: number;
   length: number;
   title: string;
+  weekday: string;
   day: string;
   month: string;
   year: string;
@@ -18,6 +19,7 @@ export default function EventCard({
   id,
   length,
   title,
+  weekday,
   day,
   month,
   year,
@@ -30,7 +32,7 @@ export default function EventCard({
     <div className={`flex flex-col md:flex-row gap-4 w-full justify-between  mb-12 pb-12 ${id < length ? 'border-b border-zinc-500' : ''}`}>
       
       <div className="bg-zinc-900 p-4 text-center flex flex-col justify-center items-center w-30">
-        <div className="text-xs">{year}</div>
+        <div className="text-xs">{weekday}</div>
         <div className="font-bold text-xl">{day} {month}</div>
         <div className="text-xs">{year}</div>
       </div>

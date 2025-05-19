@@ -1,0 +1,81 @@
+[
+    {
+      "image": "/images/banners/saweetie-all.jpg",
+      "alt": "Saweetie Australian Tour",
+      "title": "Saweetie:",
+      "subtitle": "Australian Tour",
+      "day": null,
+      "date": null,
+      "venue": null,
+      "ticketLink": null,
+      "sponsors": null
+    },
+    {
+      "image": "/images/banners/saweetie-brisbane.jpg",
+      "alt": "Saweetie Australian Tour",
+      "title": "Saweetie:",
+      "subtitle": "Live in Perth",
+      "day": "Wednesday",
+      "date": "30 . 07",
+      "venue": "Metro City Concert Club",
+      "ticketLink": "/tickets/festival",
+      "sponsors": [
+        {
+          "name": "Sponsor A",
+          "image": "/images/sponsors/sponsor1.png"
+        },
+        {
+          "name": "Sponsor B",
+          "image": "/images/sponsors/sponsor2.png"
+        }
+      ]
+    },
+    {
+      "image": "/images/banners/saweetie-melbourne.jpg",
+      "alt": "Saweetie Australian Tour",
+      "title": "Saweetie:",
+      "subtitle": "Australian Tour",
+      "day": "SUNDAY",
+      "date": "30 . 07",
+      "venue": "KU DE TA",
+      "ticketLink": "/tickets/beachparty",
+      "sponsors": [
+        {
+          "name": "Sponsor 1",
+          "image": "/images/sponsors/sponsor1.png"
+        }
+      ]
+    },
+    {
+      "image": "/images/banners/saweetie-perth.jpg",
+      "alt": "Saweetie Australian Tour",
+      "title": "Saweetie:",
+      "subtitle": "Australian Tour",
+      "day": "SUNDAY",
+      "date": "30 . 07",
+      "venue": "KU DE TA",
+      "ticketLink": "/tickets/beachparty",
+      "sponsors": [
+        {
+          "name": "Sponsor 1",
+          "image": "/images/sponsors/sponsor1.png"
+        }
+      ]
+    },
+    {
+      "image": "/images/banners/saweetie-sydney.jpg",
+      "alt": "Saweetie Australian Tour",
+      "title": "Saweetie:",
+      "subtitle": "Australian Tour",
+      "day": "SUNDAY",
+      "date": "30 . 07",
+      "venue": "KU DE TA",
+      "ticketLink": "/tickets/beachparty",
+      "sponsors": [
+        {
+          "name": "Sponsor 1",
+          "image": "/images/sponsors/sponsor1.png"
+        }
+      ]
+    }
+  ]

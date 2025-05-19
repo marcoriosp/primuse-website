@@ -10,21 +10,11 @@ export default function Header() {
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <Link href="/" className="text-white font-medium">
-            Home
-          </Link>
-          <Link href="/all-shows" className="text-white font-medium text-lg">
-            All Shows
-          </Link>
-          <Link href="https://app.primuse.net/" className="text-white font-medium text-lg" target="_blank">
-            Artist
-          </Link>
-          <Link href="https://www.primusegroup.com/about-us/" className="text-white font-medium text-lg" target="_blank">
-            About Us
-          </Link>
-          <Link href="https://www.primusegroup.com/contact-us/" className="text-white font-medium text-lg" target="_blank">
-            Contact Us
-          </Link>
+          <Link href="/" className="text-white font-medium">Home</Link>
+          <Link href="/all-shows" className="text-white font-medium text-lg">All Shows</Link>
+          <Link href="https://app.primuse.net/" className="text-white font-medium text-lg" target="_blank">Artist</Link>
+          <Link href="https://www.primusegroup.com/about-us/" className="text-white font-medium text-lg" target="_blank">About Us</Link>
+          <Link href="https://www.primusegroup.com/contact-us/" className="text-white font-medium text-lg" target="_blank">Contact Us</Link>
         </nav>
         
         <button className="md:hidden text-white">
