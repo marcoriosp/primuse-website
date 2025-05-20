@@ -18,7 +18,7 @@ export function useAnalyticsIds() {
             gtm = 'GTM-PWVT7ZB8';
             ga = 'G-9B4ZY8VLGS';
         } else if (hostname.includes('sg')) {
-            gtm = '';
+            gtm = 'GTM-T6FV2PZT';
             ga = 'G-X3C7160D01';
         } else if (hostname.includes('id')) {
             gtm = '';
