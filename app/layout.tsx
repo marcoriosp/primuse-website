@@ -34,10 +34,10 @@ export default function RootLayout({
         
     // Set default region based on hostname
     if (hostname.includes("com.au")) {
-      setTagManager("GTM-5TNRBJD8");
+      setTagManager("GTM-PWVT7ZB8");
       setGoogleAnalytics("G-9B4ZY8VLGS");
     } else if (hostname.includes("com.nz")) {
-      setTagManager("GTM-5TNRBJD8");
+      setTagManager("GTM-PWVT7ZB8");
       setGoogleAnalytics("G-9B4ZY8VLGS");
     } else if (hostname.includes("cn")) {
       setTagManager("");
@@ -52,7 +52,7 @@ export default function RootLayout({
       setTagManager("");
       setGoogleAnalytics("");
     } else {
-      setTagManager("GTM-5TNRBJD8");
+      setTagManager("GTM-PWVT7ZB8");
       setGoogleAnalytics("G-9B4ZY8VLGS");
     }
     
