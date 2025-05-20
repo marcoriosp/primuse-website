@@ -19,8 +19,8 @@ export default function Footer() {
     // Set default region based on hostname
     if (hostname.includes("com.au")) {
       setSelectedRegion("com.au");
-      setPhone("+61 421 789 321");
-      setEmail("australia@primuse.net");
+      setPhone("");
+      setEmail("aus@primuse.net");
       setInstagram("https://www.instagram.com/primuseanz");
       setTiktok("https://www.tiktok.com/@primuseanz");
       setLinkedin("https://www.linkedin.com/company/primuseanz");
