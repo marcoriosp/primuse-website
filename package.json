@@ -14,11 +14,14 @@
   "dependencies": {
     "@sendgrid/mail": "^8.1.5",
     "flowbite-react": "^0.11.7",
+    "glob": "^11.0.2",
+    "inflight": "^1.0.6",
     "next": "15.3.2",
     "nodemailer": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.6",
