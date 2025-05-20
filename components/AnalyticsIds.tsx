@@ -11,24 +11,24 @@ export function useAnalyticsIds() {
     useEffect(() => {
         const hostname = window.location.hostname;
 
-        let gtm = 'GTM-PWVT7ZB8';
-        let ga = 'G-9B4ZY8VLGS';
+        let gtm = 'GTM-PWVT7ZB8'; //Google Tag Manager
+        let ga = 'G-9B4ZY8VLGS'; //Google Analytics
 
         if (hostname.includes('com.au') || hostname.includes('com.nz')) {
             gtm = 'GTM-PWVT7ZB8';
             ga = 'G-9B4ZY8VLGS';
-        } else if (hostname.includes('cn')) {
-            gtm = '1234';
-            ga = '12345';
-        } else if (hostname.includes('id')) {
-            gtm = '123456';
-            ga = '123456';
-        } else if (hostname.includes('my')) {
-            gtm = '1234567';
-            ga = '1234567';
         } else if (hostname.includes('sg')) {
-            gtm = '12345678';
-            ga = '12345678';
+            gtm = '';
+            ga = 'G-X3C7160D01';
+        } else if (hostname.includes('id')) {
+            gtm = '';
+            ga = '';
+        } else if (hostname.includes('my')) {
+            gtm = '';
+            ga = '';
+        } else if (hostname.includes('cn')) {
+            gtm = '';
+            ga = '';
         }
 
         setIds({ gtm, ga });
