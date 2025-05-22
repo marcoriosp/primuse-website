@@ -144,7 +144,7 @@ export default function Footer() {
                 {/*<option value="cn">China</option>*/}
                 <option value="id">Indonesia</option>
                 <option value="my">Malaysia</option>
-                <option value="com.nz">New Zealand</option>
+                <option value="nz">New Zealand</option>
                 <option value="sg">Singapore</option>
               </select>
             </div>
