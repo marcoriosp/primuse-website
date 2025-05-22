@@ -7,9 +7,9 @@ import { useEffect, useState } from "react";
 export default function Footer() {
   const [selectedRegion, setSelectedRegion] = useState("sg");
   const [phone, setPhone] = useState("+65 9819 6643");
-  const [email, setEmail] = useState("info@primuse.com.au");
-  const [instagram, setInstagram] = useState("https://www.instagram.com/primuse");
-  const [tiktok, setTiktok] = useState("https://www.tiktok.com/@primuse");
+  const [email, setEmail] = useState("info@primuse.net");
+  const [instagram, setInstagram] = useState("https://www.instagram.com/primuseent");
+  const [tiktok, setTiktok] = useState("https://www.tiktok.com/@primuseent");
   const [linkedin, setLinkedin] = useState("https://www.linkedin.com/company/primuse");
 
   useEffect(() => {
@@ -17,55 +17,55 @@ export default function Footer() {
     const hostname = window.location.hostname;
     
     // Set default region based on hostname
-    if (hostname.includes("com.au")) {
-      setSelectedRegion("com.au");
+    if (hostname.includes("au")) {
+      setSelectedRegion("au");
       setPhone("");
       setEmail("aus@primuse.net");
       setInstagram("https://www.instagram.com/primuseanz");
       setTiktok("https://www.tiktok.com/@primuseanz");
       setLinkedin("https://www.linkedin.com/company/primuseanz");
-    } else if (hostname.includes("com.nz")) {
-      setSelectedRegion("com.nz");
-      setPhone("+64 21 123 456");
-      setEmail("newzealand@primuse.net");
+    } else if (hostname.includes("nz")) {
+      setSelectedRegion("nz");
+      setPhone("");
+      setEmail("nzl@primuse.net");
       setInstagram("https://www.instagram.com/primuseanz");
       setTiktok("https://www.tiktok.com/@primuseanz");
       setLinkedin("https://www.linkedin.com/company/primuseanz");
     } else if (hostname.includes("cn")) {
       setSelectedRegion("cn");
       setPhone("+86 138 0013 8000");
-      setEmail("china@primuse.net");
+      setEmail("chn@primuse.net");
       setInstagram("https://www.instagram.com/primuseent");
       setTiktok("https://www.tiktok.com/@primuseent");
       setLinkedin("https://www.linkedin.com/company/primuseent");
     } else if (hostname.includes("id")) {
       setSelectedRegion("id");
       setPhone("+62 812 3456 7890");
-      setEmail("indonesia@primuse.net");
+      setEmail("ind@primuse.net");
       setInstagram("https://www.instagram.com/primuseent");
       setTiktok("https://www.tiktok.com/@primuseent");
       setLinkedin("https://www.linkedin.com/company/primuseent");
     } else if (hostname.includes("my")) {
       setSelectedRegion("my");
       setPhone("+60 123 456 789");
-      setEmail("malaysia@primuse.net");
+      setEmail("mys@primuse.net");
       setInstagram("https://www.instagram.com/primuseent");
       setTiktok("https://www.tiktok.com/@primuseent");
       setLinkedin("https://www.linkedin.com/company/primuseent");
     } else if (hostname.includes("sg")) {
       setSelectedRegion("sg");
       setPhone("+65 9819 6643");
-      setEmail("singapore@primuse.net");
+      setEmail("sgp@primuse.net");
       setInstagram("https://www.instagram.com/primuseent");
       setTiktok("https://www.tiktok.com/@primuseent");
       setLinkedin("https://www.linkedin.com/company/primuseent");
     } else {
-      setSelectedRegion("au");
-      setPhone("+61 421 789 321");
-      setEmail("australia@primuse.net");
-      setInstagram("https://www.instagram.com/primuseanz");
-      setTiktok("https://www.tiktok.com/@primuseanz");
-      setLinkedin("https://www.linkedin.com/company/primuseanz");
+      setSelectedRegion("all");
+      setPhone("+65 9819 6643");
+      setEmail("info@primuse.net");
+      setInstagram("https://www.instagram.com/primuseent");
+      setTiktok("https://www.tiktok.com/@primuseent");
+      setLinkedin("https://www.linkedin.com/company/primuseent");
     }
   }, []);
 

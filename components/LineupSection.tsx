@@ -27,10 +27,10 @@ export default function LineupSection() {
     let filteredEvents: Event[] = [];
     
     // Set default region based on hostname
-    if (hostname.includes("com.au")) {
+    if (hostname.includes("au")) {
       filteredEvents = events.filter(event => event.country_iso === "AU");
       setRegion("IN AUSTRALIA");
-    } else if (hostname.includes("com.nz")) {
+    } else if (hostname.includes("nz")) {
       filteredEvents = events.filter(event => event.country_iso === "NZ");
       setRegion("IN NEW ZEALAND");
     } else if (hostname.includes("cn")) {
